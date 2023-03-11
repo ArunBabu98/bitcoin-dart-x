@@ -4,7 +4,7 @@ import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   test('ECDSA - secp256k1 test', () {
-    var ec = getSecp256k1();
+    var ec = SelectCurve().getSecp256k1();
     var priv = ec.generatePrivateKey();
     var pub = priv.publicKey;
     print(priv);
