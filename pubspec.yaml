@@ -13,6 +13,7 @@ dependencies:
   hex: ^0.2.0
   crypto: ^3.0.2
   pointycastle: ^3.6.2
+  ninja_asn1: ^2.0.0
 
 dev_dependencies:
   flutter_test:

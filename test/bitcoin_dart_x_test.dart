@@ -7,8 +7,8 @@ import 'package:hex/hex.dart';
 void main() {
   test('BIP39 check', () {
     BIP39 bip39 = BIP39();
-    var temp = bip39.validateMnemonic(
-        "hope manage police crys=tal card shy correct cabbage all assist sail universe keen chimney industry hire flat royal switch inmate grain genuine anchor later");
-    print(temp);
+    var mnemonic = bip39.generateMnemonics(length: 24);
+    var valid = bip39.validateMnemonic(mnemonic);
+    expect(valid, true, reason: "Mnemonics is not valid!");
   });
 }
